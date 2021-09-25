@@ -1,0 +1,244 @@
+<html> 
+
+<head>
+    <title>Google Lens VS. MoblieNet Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link href="style.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+  <center>
+    <span>
+    <h3 class="btn btn-info heading">Google Lens Vs. MobileNet Case Study!</b>
+    <img class="gif" src="logo.gif">
+  </span>
+      <hr>
+      <marquee direction="left">We will be testing images in both models(Google Lens and MoblieNet) to find out which model is best for you!</marquee>
+    </h3>
+</center>
+<br><br>
+<center>
+  <ol>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 trophy">
+      <li>
+        <b>Test Image - </b><img src="trophy.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Trophy </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Stethescope </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 tissue">
+      <li>
+        <b>Test Image - </b><img src="tissue.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Facial Tissue Boxes </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Jigsaw Puzzle </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 teddybear">
+      <li>
+        <b>Test Image - </b><img src="teddybear.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Valentine Bear </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Teddy, Teddy Bear </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Tie</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 rubixcube">
+      <li>
+        <b>Test Image - </b><img src="rubixcube.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Rubix Cube </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Smoothing Iron </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 pen">
+      <li>
+        <b>Test Image - </b><img src="pen.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Pen </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Swab, Swob, Mop </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 glue">
+      <li>
+        <b>Test Image - </b><img src="glue.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Elmer's Glue</span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Hair Spray </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 flashlight">
+      <li>
+        <b>Test Image - </b><img src="flashlight.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Petzl </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Joystick </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Neither</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 cream">
+      <li>
+        <b>Test Image - </b><img src="cream.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Aveeno Daily Moisturizing Lotion 20 fl oz. 2-pack </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Lotion </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Tie</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 chocolate">
+      <li>
+        <b>Test Image - </b><img src="chocolate.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Turkish Delight </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Mask </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 bag">
+      <li>
+        <b>Test Image - </b><img src="bag.jpg" class="img-responsive">
+      </li>
+      <h5>Output on <b>Google Lens</b> - 
+        <span> Coin Change Purse </span>
+        </h5>
+        <br>
+        <h5>Output on <b>MobileNet</b> - 
+          <span> Computer Mouse </span>
+          </h5>
+
+        <div class="mini-result">
+          <h4>Result - </h4>
+          <hr>
+          <h4>Google Lens</h4>
+        </div>
+
+    </div>
+
+    <hr>
+  </ol>
+    <h3 class="results_result">According To The Examinations of MobileNet and Google Lens, Google Lens is the most accurate with 90% and MobileNet with only 20%.</h1>
+      <div class="copy-right-footer">By: Dhanush Kandlagunta</div>
+</center>
+    <script src="main.js"></script>
+</body>
+</html>

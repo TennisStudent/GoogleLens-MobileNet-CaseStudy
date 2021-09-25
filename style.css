@@ -1,0 +1,55 @@
+.heading
+{
+    font-size: 21px;
+    width: 100%;   
+    margin: 0px;
+    box-shadow: 5px 5px 5px black;
+}
+img
+{
+    width: 300px;
+    height: 225px;
+}
+body
+{
+    background-color:rgb(22, 255, 154);
+}
+
+.text_images_and_result
+{
+    box-shadow: 5px 5px 18px black;
+    width: 80%;
+    height: 400px;
+}
+
+.copy-right-footer
+{
+    color: aliceblue;
+    bottom: 0;
+    width: 100%;
+    background:darkslateblue;
+    line-height: 3;
+    text-align: center;  
+}
+img
+{
+    box-shadow: 5px 5px 5px grey;
+}
+.gif
+{
+    width: 100px;
+    height: 100px;
+}
+h5
+{
+    border: 1px solid white;
+    border-radius: 20px;
+}
+span
+{
+ color: rgb(255, 145, 0);
+}
+.results_result
+{
+    color:rgb(52, 127, 240)
+}
